@@ -1,0 +1,14 @@
+{
+  "name": "IP Checker",
+  "folder_name": "",
+  "subfolder_name": "",
+  "tasks": [{
+    "action": "http_request",
+    "type": "GET",
+    "url": "https://ifconfig.me/ip",
+    "to": "result"
+  }, {
+    "action": "print",
+    "text": "IP: {{result}}"
+  }]
+}
